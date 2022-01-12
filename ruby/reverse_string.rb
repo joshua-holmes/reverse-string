@@ -1,5 +1,7 @@
 def reverse_string(str)
-  # type your code in here
+  new_str = ""
+  str.length.times { |i| new_str = str[i] + new_str }
+  new_str
 end
 
 if __FILE__ == $PROGRAM_NAME
@@ -16,3 +18,5 @@ end
 
 # Please add your pseudocode to this file
 # And a written explanation of your solution
+
+# Iterate over str letters and add them before the new string
